@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verde Vida | Jardinagem e Paisagismo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7f9f5;
+            color: #263b2b;
+        }
+
+        header {
+            background: #164b2c;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #b5e6a1;
+        }
+
+        .banner {
+            min-height: 480px;
+            background:
+                linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+                url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600")
+                center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .banner h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            font-size: 19px;
+            margin-bottom: 30px;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #64a947;
+            color: white;
+            padding: 15px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background: #397a30;
+        }
+
+        section {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 18px;
+            color: #164b2c;
+        }
+
+        .descricao {
+            max-width: 650px;
+            margin: 0 auto 35px;
+            line-height: 1.7;
+            color: #627064;
+        }
+
+        .servicos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px #00000010;
+        }
+
+        .card .icone {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #28623b;
+        }
+
+        .card p {
+            color: #687568;
+            line-height: 1.6;
+        }
+
+        .sobre {
+            background: #eaf2e6;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .contato {
+            background: #164b2c;
+            color: white;
+        }
+
+        .contato h2 {
+            color: white;
+        }
+
+        .contato p {
+            margin: 15px 0 25px;
+        }
+
+        footer {
+            background: #10351f;
+            color: white;
+            padding: 22px;
+            text-align: center;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 18px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                margin: 7px;
+                display: inline-block;
+            }
+
+            .banner h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌿 Verde Vida</div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<div class="banner" id="inicio">
+    <div>
+        <h1>Seu jardim, nossa paixão!</h1>
+        <p>Transformamos espaços em ambientes verdes, bonitos e cheios de vida.</p>
+        <a class="botao" href="#contato">Solicitar orçamento</a>
+    </div>
+</div>
+
+<section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <p class="descricao">
+        Cuidamos do seu jardim com dedicação, qualidade e profissionalismo.
+    </p>
+
+    <div class="servicos">
+
+        <div class="card">
+            <div class="icone">🌱</div>
+            <h3>Manutenção de Jardins</h3>
+            <p>Cuidados completos para manter seu jardim sempre bonito e saudável.</p>
+        </div>
+
+        <div class="card">
+            <div class="icone">🌳</div>
+            <h3>Poda de Árvores</h3>
+            <p>Podas realizadas com cuidado para preservar a saúde das plantas.</p>
+        </div>
+
+        <div class="card">
+            <div class="icone">🌷</div>
+            <h3>Paisagismo</h3>
+            <p>Criamos espaços verdes personalizados e harmoniosos.</p>
+        </div>
+
+        <div class="card">
+            <div class="icone">🍃</div>
+            <h3>Corte de Grama</h3>
+            <p>Deixamos seu gramado uniforme, limpo e bem cuidado.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="sobre" id="sobre">
+    <h2>Sobre Nossa Empresa</h2>
+    <p class="descricao">
+        A Verde Vida nasceu com o objetivo de transformar ambientes
+        através da natureza. Trabalhamos com dedicação, responsabilidade
+        e atenção a cada detalhe para entregar jardins incríveis aos nossos clientes.
+    </p>
+</section>
+
+<section id="galeria">
+    <h2>Nosso Trabalho</h2>
+    <p class="descricao">
+        Confira algumas inspirações de jardins e paisagismo.
+    </p>
+
+    <div class="galeria">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600" alt="Jardim verde">
+        <img src="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?w=600" alt="Paisagismo">
+        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600" alt="Jardim florido">
+    </div>
+</section>
+
+<section class="contato" id="contato">
+    <h2>Vamos cuidar do seu jardim?</h2>
+    <p>Entre em contato e solicite seu orçamento sem compromisso!</p>
+
+    <a class="botao"
+       href="https://wa.me/5548999999999?text=Olá! Gostaria de solicitar um orçamento de jardinagem."
+       target="_blank">
+       Falar pelo WhatsApp
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Verde Vida Jardinagem e Paisagismo</p>
+    <p>Transformando espaços através da natureza 🌿</p>
+</footer>
+
+</body>
+</html>
